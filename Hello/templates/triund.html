@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block title %}Triund{% endblock title %}
+{% block body %}
+<div.class="container-fliud mx-4">
+<img src="/static/iimg/triund.jpg" class="d-block w-100" alt="">
+
+</div>
+<h1 class='text-center'>Book Trip</h1>
+<form method='post' action='/triund'>
+{% csrf_token %}
+
+<form class="row g-3">
+
+  <div class="col-md-2">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="name" class="form-control" id="name" name='name'>
+  </div>    
+
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email" name='email'>
+  </div>
+  <div class="col-md-6">
+    <label for="person" class="form-label">Number Of Person</label>
+    <input type="person" class="form-control" id="person" name='person'>
+  </div>
+  <div class="col-md-4">
+    <label for="state" class="form-label">State</label>
+    <select id="text" class="form-select" name='state'>
+      <option selected>Choose...</option>
+      <option>Andhra Pradesh</option>
+	<option>Arunachal Pradesh*</option>
+	<option>Assam	</option>
+	<option>Bihar	</option>
+	<option>Chhatisgarh</option>
+	<option>Goa	</option>
+	<option>Gujarat	</option>
+	<option>Haryana	</option>
+	<option>Himachal Pradesh</option>
+	<option>J & K	</option>
+	<option>Jharkhand	</option>
+	<option>Karnataka**</option>
+<option>	Kerala	</option>
+	<option>Madhya Pradesh</option>
+	<option>Maharashtra	</option>
+	<option>Manipur	</option>
+	<option>Mizoram*	</option>
+	<option>Meghalaya*	    </option>	   
+	<option>Nagaland		</option>	
+	<option>Orissa			</option>
+	<option>Punjab			</option>
+	<option>Rajasthan	</option>
+	<option>Sikkim			</option>
+	<option>Tamil Nadu	</option>
+	<option>Telangana	</option>
+    <option>Tripura			</option>
+	<option>Uttar Pradesh	</option>
+	<option>Uttrakhand		</option>	
+<option>	West Bengal		</option>
+	<option>A & N Islands	</option>
+	<option>Chandigarh		</option>
+	<option>Daman & Diu		</option>	
+	<option>Dadra & Nagar 	</option>
+	<option>Delhi			</option>
+	<option>Lakshadweep*</option>
+	<option>Pudducherry		</option>
+ 	</option>
+    </select>
+  </div>
+
+  <div class="col-md-2">
+    <label for="zip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="zip" name='zip'>
+  </div>
+  
+
+   
+
+
+   <div class="col-md-2">
+    <label for="number" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="number" name='number'>
+  </div>
+
+
+
+
+  <div class="col-md-2">
+    <label for="date" class="form-label">Arrival Date</label>
+    <input type="date" class="form-control" id="date" name='date'>
+  </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">submit</button>
+  </div>
+</form>
+<p>
+
+
+
+
+</p>
+<div class="container-fluid">
+<h1 class='text-center'>About Triund</h1>
+<p><b>Trek distance: 9km by foot</b></p>
+
+
+
+<p><b>Altitude:2875m</b></p>
+
+
+<p><font color='green'><b>Triund Trek a very peaceful Trek in India, offers the charm of trekking in Himachal. 
+A well- known destination, the beauty of high hills attracts many tourist every year.
+
+
+Feast your eyes with the exotic views of Dhauladhar range and fascinating Kangra valley. 
+The exciting terrains through mixed dense forests and serpent curves makes it a bliss for trekking lovers.
+ The soothing environment makes it perfect for a relaxing escapade. </font></b></p>
+
+
+<p><font color='green'><b>Triund is a small hill station located in the Kangra district of the Indian state of Himachal Pradesh. Triund is a part of Dharamkot and is located at the foot of the Dhauladhar ranges at a height of 2875 m. This is an easy and ideal destination for trekkers looking for a short but moderately difficult trek with spectacular vistas and a rewarding end result.
+
+The Triund Trek is extremely popular among young people and families. During peak seasons, the trek can be extremely crowded; therefore, those planning to visit the site for its tranquility should consider visiting during the weekdays and early summers when it is less crowded. The trail helps trekkers gain knowledge about the beauty of the mountains and local culture. The trek’s short duration benefits climbers who want to enjoy the thrill of trekking while also visiting Himachal’s local villages.
+
+Trekkers can extend their trekking experience by visiting nearby attractions such as Bhagsu Falls, a popular tourist attraction known for its captivating and refreshing waterfall. The views of many snow capped peaks from the endpoint might also assist trekkers in bookmarking their new adventure.</font></b></p>
+
+
+</div>
+
+{% endblock body %}
